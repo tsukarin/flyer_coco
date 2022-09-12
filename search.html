@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- css読み込み -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/humburger.css">
+        <link rel="stylesheet" href="assets/css/login.css">
+        <!-- jQuery読み込み -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- JS読み込み -->
+        <script src="assets/js/bootstrap.min.js'"></script>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+          <div class="back-to-home-logo">
+              <a href="base.html"><img src="assets/img/my_closet.jpg"></a>
+          </div>
+            <div id="navArea">
+            <nav>
+                <div class="inner">
+                <ul>
+                    <li><a class="allow" href="base.html"><span>トップページ</span></a></li>
+                </ul>
+                </div>
+            </nav>
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="mask"></div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="login-container">
+                <div id="output"></div>
+                <div class="logo"><img src="./assets/img/my_closet_top.jpg"></div>
+                <div class="form-box">
+                    <form method="POST" action="./loggedin_top.php" >
+                          <input name="emf" required="required" type="text" placeholder="mail">
+                          <input name="pwf" type="password"required="required" placeholder="password">
+                          <button class="btn btn-info btn-block login" type="submit">Login</button>
+                    </form>
+                    <a href="./base.html"><p class= "btn btn-info btn-block login mt-5 pt-3 pb-3">トップページへ戻る</p></a>
+                </div>
+            </div>
+                  <p class="text-center">*はじめての方は<a href="./regist.php">こちら</a>から登録してください。</p>
+        </div>
+        <footer class="footer">
+            <div class="text-center m-3">
+                <p>Copyright © 2021 sc2021-t2 All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="assets/js/humburger.js"></script>
+        <script src="test.js"></script>
+    </body>
+</html>
