@@ -88,7 +88,7 @@ if($aflag==0){
 </form>
 
 <br>
-<a href="./gupload.php" type="button">フライヤー登録</a>
+
 
 
 <!-- kokokara -->
