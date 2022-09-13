@@ -43,7 +43,7 @@ if($aflag==0){
 <body style = "background-color: antiquewhite;">
 <body>
 
-<h1>Flyer Board</h1>
+<h1 style = "font:cursive">Flyer coco</h1>
 
 <?php
  echo "<p>LOGIN SUCCEED: " . $ems . "</p>\n";
