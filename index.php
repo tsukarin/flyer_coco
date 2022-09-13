@@ -52,7 +52,7 @@ if($aflag==0){
  </br>
 
  <a href="./gupload.php">
- <i class="bi bi-door-open-fill" type="button"></i>
+ <i class="bi bi-door-open-fill"></i>
  </a>
 
  <div class="input-group">
