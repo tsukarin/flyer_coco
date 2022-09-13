@@ -51,7 +51,9 @@ if($aflag==0){
  ?>
  </br>
 
- <a href="./gupload.php" type="button">フライヤー登録</a>
+ <a href="./gupload.php">
+ <i class="bi bi-door-open-fill" type="button"></i>
+ </a>
 
  <div class="input-group">
           <form method="post" action="./search.php">
