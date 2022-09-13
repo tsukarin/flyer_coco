@@ -54,6 +54,40 @@ if($aflag==0){
 
  <h1>Flyer Board</h1>
 
+ <div class="input-group">
+          <form method="post" action="./search.php">
+            <input type="text" name="kw" class="form-control" placeholder="キーワードを入力">
+          </div>
+
+        <div class="input-group">
+          <select name="genre" class="form-select" aria-label="Default select example">
+            <option selected>ジャンルを選択(必須)</option>
+            <option value="1">アイドル</option>
+            <option value="2">ヒップホップ</option>
+            <option value="3">レゲエ</option>
+            <option value="4">ロックバンド</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+            <select name="order" class="form-select" aria-label="Default select example">
+            <option selected>表示順</option>
+            <option value="1">新着</option>
+            <option value="2">開催日</option>
+            <option value="3">人気</option>
+          </select>
+          
+        </div>
+
+
+        <input name="from" type="date" />
+        〜<input name="to" type="date" />
+
+      </br>
+      <button class="btn btn-outline-success" type="submit" id="button-addon2"><i class="fas fa-search"></i> 検索</button>
+
+</form>
+
 <a href="./gupload.php" type="button">フライヤー登録</a>
 <a href="./search.html">フライヤー検索</a>
 
