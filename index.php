@@ -68,7 +68,7 @@ if($aflag==0){
     </p>
 </a>
 <div class="box"
-padding: 0.5em 1em;
+    padding: 0.5em 1em;
     margin: 2em 0;
     color: #00BCD4;
     background: #e4fcff;
@@ -106,9 +106,10 @@ padding: 0.5em 1em;
 
       </br>
       <button class="btn btn-outline-success" type="submit" id="button-addon2"><i class="fas fa-search"></i> 検索</button>
-</div>
+
 
 </form>
+</div>
 
 <br>
 
