@@ -43,7 +43,7 @@ if($aflag==0){
 <body style = "background-color: antiquewhite;">
 <body>
 
-
+<h1>Flyer Board</h1>
 
 <?php
  echo "<p>LOGIN SUCCEED: " . $ems . "</p>\n";
@@ -51,8 +51,7 @@ if($aflag==0){
  ?>
  </br>
 
-
- <h1>Flyer Board</h1>
+ <a href="./gupload.php" type="button">フライヤー登録</a>
 
  <div class="input-group">
           <form method="post" action="./search.php">
@@ -90,7 +89,6 @@ if($aflag==0){
 
 <br>
 <a href="./gupload.php" type="button">フライヤー登録</a>
-<a href="./search.html">フライヤー検索</a>
 
 
 <!-- kokokara -->
