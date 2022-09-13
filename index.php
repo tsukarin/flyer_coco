@@ -42,7 +42,7 @@ if($aflag==0){
 </head>
 <body style = "background-color: antiquewhite;">
 <body>
-
+<header style= "back-groundcolor:#00BCD4">
 <h1 style = "font-family:fantasy">Flyer coco</h1>
 
 <?php
@@ -67,6 +67,9 @@ if($aflag==0){
         投稿
     </p>
 </a>
+
+</header>
+
 <div class="box" style=
     "padding: 0.5em 1em;
     margin: 2em 0;
