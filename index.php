@@ -69,6 +69,7 @@ if($aflag==0){
 </a>
 
  <div class="input-group">
+    <p>フライヤー検索</p>
           <form method="post" action="./search.php">
             <input type="text" name="kw" class="form-control" placeholder="キーワードを入力">
           </div>
