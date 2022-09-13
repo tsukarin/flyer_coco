@@ -47,7 +47,7 @@ if($aflag==0){
  echo "<p><a href=\"./logout.php\">LOGOUT</a>";
  ?>
  <br>
-<a href="./gupload.php">フライヤー登録はこちら</a>
+<a href="./gupload.php">フライヤー登録はこちら!</a>
 
 <!-- kokokara -->
 <?php
