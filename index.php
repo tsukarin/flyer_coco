@@ -42,7 +42,7 @@ if($aflag==0){
 </head>
 <body style = "background-color: antiquewhite;">
 <body>
-<header style= "back-groundcolor:#00BCD4">
+<header style= "background-color:#00BCD4">
 <h1 style = "font-family:fantasy">Flyer coco</h1>
 
 <?php
