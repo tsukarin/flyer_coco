@@ -40,17 +40,26 @@ if($aflag==0){
 
 
 </head>
+<body style = "background-color: antiquewhite;">
 <body>
+
+
 
 <?php
  echo "<p>LOGIN SUCCEED: " . $ems . "</p>\n";
  echo "<p><a href=\"./logout.php\">LOGOUT</a>";
  ?>
- <br>
-<a href="./gupload.php">フライヤー登録はこちら~!</a>
+ </br>
+
+
+ <h1>Flyer Board</h1>
+
+<a href="./gupload.php" type="button">フライヤー登録</a>
+<a href="./search.html">フライヤー検索</a>
+
 
 <!-- kokokara -->
-<?php
+<!-- <?php
 $sql="select filename from gupload where uid='" . $uid . "' order by gid desc;";
 $result = pg_query($sql) or die('Query failed: ' . pg_last_error());
 echo "<table>\n";
@@ -63,7 +72,7 @@ while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
  }
  echo "</table>\n";
 
-?>
+?> -->
 
 <!-- kokomade -->
 </body>
