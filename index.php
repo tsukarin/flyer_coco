@@ -67,9 +67,15 @@ if($aflag==0){
         投稿
     </p>
 </a>
-
- <div class="input-group">
-    <p>フライヤー検索</p>
+<div class="box"
+padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #00BCD4;
+    background: #e4fcff;
+    border-top: solid 6px #1dc1d6;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);>
+        <div class="input-group">
+        <p>フライヤー検索</p>
           <form method="post" action="./search.php">
             <input type="text" name="kw" class="form-control" placeholder="キーワードを入力">
           </div>
@@ -100,6 +106,7 @@ if($aflag==0){
 
       </br>
       <button class="btn btn-outline-success" type="submit" id="button-addon2"><i class="fas fa-search"></i> 検索</button>
+</div>
 
 </form>
 
