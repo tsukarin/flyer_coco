@@ -77,15 +77,7 @@ if($aflag==0){
               <!-- <li><a href="index.php">MYPAGE</a></li> -->
          </ul>
       </nav>
-      <nav class="sp-nav">
-          <ul class="menu">
-              <li><a href="#top">TOP</a></li>
-              <li><a href="#search">SEARCH</a></li>
-              <li><a href="./gupload.php">POST</a></li>
-              <!-- <li><a href="#mypage">MYPAGE</a></li> -->
-              <li class="close"><span>CLOSE</span></li>
-         </ul>
-      </nav>
+      
       <div id="hamburger">
          <span></span>
       </div>
