@@ -72,7 +72,7 @@ if($aflag==0){
       <nav class="pc-nav">
          <ul class="menu">
               <li><a href="index.php">TOP</a></li>
-              <li><a href="search.html">SEARCH</a></li>
+              
               <li><a href="./gupload.php">POST</a></li>
               <!-- <li><a href="index.php">MYPAGE</a></li> -->
          </ul>
