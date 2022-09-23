@@ -52,7 +52,7 @@ if (isset($_POST['to'])&& strlen($_POST['to'])>0){$to=$_POST['to'];}
 if (isset($_POST['order'])&& strlen($_POST['order'])>0){$order=$_POST['order'];}
 
 
-$sql="select filename,event from gupload";
+$sql="select filename,event,gid from gupload";
 $wflag=0;
 if (isset($kw)){
   $sql=$sql . " where other like '%" . $kw . "%' ";
