@@ -4,6 +4,10 @@
 </head>
 <body style = "background-color: antiquewhite;">
 <body>
+  <ul>
+    <li><a href="/index.php">トップページへ</a></li>
+    <li><a href="/search.php">戻る</a></li>
+  </ul>
 <?php
 if (isset($_POST['gid'])){$gid = $_POST['gid']; }
 $dbconn = pg_connect("host=localhost dbname=raito23 user=raito23 password=0QHxOR5a");
