@@ -41,7 +41,7 @@ if($aflag==0){
 
 </head>
 <body>
-  <a href="/index.php">トップページへ</a>
+  <a href="index.php">トップページへ</a>
 
 <!-- kokokara -->
 <?php

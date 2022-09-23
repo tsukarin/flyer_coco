@@ -5,8 +5,8 @@
 <body style = "background-color: antiquewhite;">
 <body>
   <ul>
-    <li><a href="/index.php">トップページへ</a></li>
-    <li><a href="/search.php">戻る</a></li>
+    <li><a href="index.php">トップページへ</a></li>
+    <li><a href="./search.php">戻る</a></li>
   </ul>
 <?php
 if (isset($_POST['gid'])){$gid = $_POST['gid']; }
