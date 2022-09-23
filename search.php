@@ -86,17 +86,18 @@ elseif (isset($order) && $order==2){
   $sql=$sql . " order by date desc ";
 }
 $sql=$sql . ";";
-echo $sql;
+//echo $sql;
 echo $to;
 $result = pg_query($sql) or die('Query failed: ' . pg_last_error());
-echo "<table>\n";
-while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
-   echo "\t<tr>\n";
-   foreach ($line as $col_value) {
-     echo "\t\t<td><img width=\"100\" src=\"./uploads/$col_value\"</td>\n";
-   }
-   echo "\t</tr>\n";
- }
+
+echo "<table border=\"1\">";
+while($line = pg_fetch_array($result)){
+  echo "<tr><td><img src=\"./uploads/" . $line['filename'] . "\" width=\"100px\" ></td>";
+  echo "<td><form method=\"POST\" action=\"./detail.php\">";
+  echo "<input type=\"hidden\" name=\"gid\" value=\"" . $line['gid'] . "\">";
+  echo "<input type=\"submit\" value=\"詳細を見る\">";
+  echo "</td></tr>";
+}
  echo "</table>\n";
 
 ?>
