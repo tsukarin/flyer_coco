@@ -122,7 +122,7 @@ box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);">
 
 
 <!-- kokokara -->
-<!-- <?php
+<?php
 $sql="select filename from gupload where uid='" . $uid . "' order by gid desc;";
 $result = pg_query($sql) or die('Query failed: ' . pg_last_error());
 echo "<table>\n";
@@ -135,7 +135,20 @@ while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
  }
  echo "</table>\n";
 
-?> -->
+ $sql="select filename,event from gupload";
+ $sql=$sql . ";";
+ echo $sql;
+ $result = pg_query($sql) or die('Query failed: ' . pg_last_error());
+echo "<table>\n";
+while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
+   echo "\t<tr>\n";
+   foreach ($line as $col_value) {
+     echo "\t\t<td><img width=\"100\" src=\"./uploads/$col_value\"</td>\n";
+   }
+   echo "\t</tr>\n";
+ }
+ echo "</table>\n";
+?> 
 
 <!-- kokomade -->
 </body>
