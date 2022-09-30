@@ -96,7 +96,7 @@ while($line = pg_fetch_array($result)){
   echo "<tr><td><img src=\"./uploads/" . $line['filename'] . "\" width=\"100px\" ></td>";
   echo "<td><form method=\"POST\" action=\"./detail.php\">";
   echo "<input type=\"hidden\" name=\"gid\" value=\"" . $line['gid'] . "\">";
-  echo "<input type=\"submit\" value=\"詳細を見る\">";
+  echo "<input type=\"submit\" value=\"詳細を見る\"></form>";
   echo "</td></tr>";
 }
  echo "</table>\n";

@@ -128,13 +128,13 @@ echo "</table>\n";
 
 $sql="select filename,event,gid from gupload";
 $result = pg_query($sql) or die('Query failed: ' . pg_last_error());
-
+//gidと詳細を見るをひとつひとつ繋ぐ
 echo "<table border=\"1\">";
 while($line = pg_fetch_array($result)){
   echo "<tr><td><img src=\"./uploads/" . $line['filename'] . "\" width=\"100px\" ></td>";
   echo "<td><form method=\"POST\" action=\"./detail.php\">";
   echo "<input type=\"hidden\" name=\"gid\" value=\"" . $line['gid'] . "\">";
-  echo "<input type=\"submit\" name=\"gid\" value=\"詳細を見る\">";
+  echo "<input type=\"submit\" value=\"詳細を見る\"></form>";
   echo "</td></tr>";
 }
  //echo "</table>\n";
