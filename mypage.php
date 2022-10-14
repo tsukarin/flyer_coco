@@ -37,7 +37,7 @@ if($aflag==0){
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 </head>
 <style>
-  .a1{
+  .b{
     display: flex;
   }
 </style>
@@ -46,7 +46,8 @@ if($aflag==0){
     <a href="index.php">トップページへ</a>
 
 <div class="a1">
-<div class="b1">
+<div class="b box1">
+  <h2>お気に入り</h2>
 <?php
 //お気に入り///////////////////////////////////////////////////////////////////////////////////////// 
 echo "</table>\n";
@@ -66,7 +67,8 @@ while($line = pg_fetch_array($result)){
 ?>
 </div>
 
-<div class="b2">
+<div class="b box2">
+  <h2>投稿</h2>
 <?php
 //投稿////////////////////////////////////////////////////////////////////////////////////////////////
 echo "</table>\n";
@@ -86,7 +88,8 @@ while($line = pg_fetch_array($result)){
  ?>
 </div>
 
-<div class="b3">
+<div class="b box3">
+  <h2>アーカイブ</h2>
 <?php
 //アーカイブ/////////////////////////////////////////////////////////////////////////////////////////////
 echo "</table>\n";
