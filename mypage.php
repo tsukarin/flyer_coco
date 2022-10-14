@@ -36,15 +36,77 @@ if($aflag==0){
   </title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 </head>
-
+<style>
+  .a1{
+    display: flex;
+  }
+</style>
 
 <body>
     <a href="index.php">トップページへ</a>
-    <?php
-    //お気に入り  
-    //投稿
-    //アーカイブ
-    ?>
+
+<div class="a1">
+<div class="b1">
+<?php
+//お気に入り///////////////////////////////////////////////////////////////////////////////////////// 
+echo "</table>\n";
+
+$sql="select filename,event,gid from gupload";
+$result = pg_query($sql) or die('Query failed: ' . pg_last_error());
+//gidと詳細を見るをひとつひとつ繋ぐ
+echo "<table border=\"1\">";
+while($line = pg_fetch_array($result)){
+  echo "<tr><td><img src=\"./uploads/" . $line['filename'] . "\" width=\"100px\" ></td>";
+  echo "<td><form method=\"POST\" action=\"./detail.php\">";
+  echo "<input type=\"hidden\" name=\"gid\" value=\"" . $line['gid'] . "\">";
+  echo "<input type=\"submit\" value=\"詳細を見る\"></form>";
+  echo "</td></tr>";
+}
+  //echo "</table>\n"; 
+?>
+</div>
+
+<div class="b2">
+<?php
+//投稿////////////////////////////////////////////////////////////////////////////////////////////////
+echo "</table>\n";
+
+$sql="select filename,event,gid from gupload";
+$result = pg_query($sql) or die('Query failed: ' . pg_last_error());
+//gidと詳細を見るをひとつひとつ繋ぐ
+echo "<table border=\"1\">";
+while($line = pg_fetch_array($result)){
+  echo "<tr><td><img src=\"./uploads/" . $line['filename'] . "\" width=\"100px\" ></td>";
+  echo "<td><form method=\"POST\" action=\"./detail.php\">";
+  echo "<input type=\"hidden\" name=\"gid\" value=\"" . $line['gid'] . "\">";
+  echo "<input type=\"submit\" value=\"詳細を見る\"></form>";
+  echo "</td></tr>";
+}
+ //echo "</table>\n";
+ ?>
+</div>
+
+<div class="b3">
+<?php
+//アーカイブ/////////////////////////////////////////////////////////////////////////////////////////////
+echo "</table>\n";
+
+$sql="select filename,event,gid from gupload";
+$result = pg_query($sql) or die('Query failed: ' . pg_last_error());
+//gidと詳細を見るをひとつひとつ繋ぐ
+echo "<table border=\"1\">";
+while($line = pg_fetch_array($result)){
+  echo "<tr><td><img src=\"./uploads/" . $line['filename'] . "\" width=\"100px\" ></td>";
+  echo "<td><form method=\"POST\" action=\"./detail.php\">";
+  echo "<input type=\"hidden\" name=\"gid\" value=\"" . $line['gid'] . "\">";
+  echo "<input type=\"submit\" value=\"詳細を見る\"></form>";
+  echo "</td></tr>";
+}
+ //echo "</table>\n";
+ //////////////////////////////////////////////////////////////////////////////////////////////////////
+?>
+</div>
+</div>
 
 </body>
 </html>
